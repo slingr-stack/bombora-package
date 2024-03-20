@@ -8,31 +8,30 @@
     </thead>
     <tbody>
     <tr>
-        <td>Skeleton package</td>
-        <td>January 3, 2024</td>
-        <td>Detailed description of the API of the Skeleton package.</td>
+        <td>Bombora package</td>
+        <td>March 19, 2024</td>
+        <td>Detailed description of the API of the Bombora package.</td>
     </tr>
     </tbody>
 </table>
 
 # Overview
 
+The Bombora endpoint allows to make use of the Company Surge API and the Topic Taxonomy API from the Bombora web application.
+
+In order to make it easy to work with the endpoint, some helpers are provided.
+
 # Javascript API
 
-The Javascript API of the skeleton package has two pieces:
+The Javascript API of the bombora package has two pieces:
 
 - **HTTP requests**
 - **Flow steps**
 
 ## HTTP requests
-You can make `GET`,`PUT`,`PATCH`,`DELETE` requests to the [skeleton API](API_URL_HERE) like this:
+You can make `GET`,`PUT`,`PATCH`,`DELETE` requests to the [Bombora API](https://bombora-partners.atlassian.net/wiki/spaces/DOC/pages/524307/API+Documentation) like this:
 ```javascript
-var response = pkg.skeleton.api.get('/path3')
-var response = pkg.skeleton.api.put('/path1/:testPath', body)
-var response = pkg.skeleton.api.put('/path1/:testPath')
-var response = pkg.skeleton.api.patch('/path2?param2=' + httpOptions.query.param2 + '&param3=' + httpOptions.query.param3 + '', body)
-var response = pkg.skeleton.api.patch('/path2?param2=' + httpOptions.query.param2 + '&param3=' + httpOptions.query.param3 + '')
-var response = pkg.skeleton.api.delete('/path4')
+var response = pkg.bombora.api.get({path:'/v2/Surge/GetMetaData'});
 ```
 
 Please take a look at the documentation of the [HTTP service](https://github.com/slingr-stack/http-service)
