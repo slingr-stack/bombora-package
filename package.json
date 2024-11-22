@@ -9,7 +9,6 @@
             "instanceId": "shared"
         }
     ],
-    "configurationBuilder": "/configurationBuilder.js",
     "configuration": [
         {
             "name": "apiKey",
